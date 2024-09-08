@@ -1,0 +1,23 @@
+Kaspersky Endpoint Security для Windows [Русский (Россия)]
+Positive Technologies XSpider
+КриптоПро CSP
+ViPNet Client
+ViPNet PKI
+Dr.Web Security Space
+DallasLock
+Kaspersky Anti-Virus
+Kaspersky Free
+RedCheck
+Агент администрирования Kaspersky Security Center [Русский (Россия)]
+Единый Клиент JaCarta
+Континент TLS-клиент
+Secret Net Studio - Базовая защита
+Secret Net Studio - Безопасная среда
+Secret Net Studio - Доверенная среда
+Secret Net Studio - Защита дисков и шифрование данных
+Secret Net Studio - Контроль печати
+Secret Net Studio - Локальная защита
+Secret Net Studio - Локальный центр управления
+Secret Net Studio - Паспорт ПО
+Secret Net Studio - Сетевая защита
+Secret Net Studio - Антивирус

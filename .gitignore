@@ -1,0 +1,7 @@
+venv/
+app.log
+database/*
+!database/_TABLE.xlsx
+report/*
+!report
+my_console_app.egg-info/*
