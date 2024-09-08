@@ -9,6 +9,7 @@ class CONFIG:
     DELL_ARM_NOT_FIND_ORG = False
     LIBPATH = ""
     EXECUTPATH = ""
+    NAMEFILELOG = ""
     
 
 

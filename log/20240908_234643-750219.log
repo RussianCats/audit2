@@ -1,0 +1,9 @@
+2024-09-08 23:46:43,654 - TAUDITV2 - INFO - ---------- START ----------
+2024-09-08 23:46:43,686 - TAUDITV2 - INFO - Чистим от дубликатов, найдено 0 дубликатов
+2024-09-08 23:46:43,726 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\Кабинет главного бухгалтера\GLBUH.xml 		 GLBUH
+2024-09-08 23:46:43,765 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\Кабинет финансового директора\FINDIR.xml 		 FINDIR
+2024-09-08 23:46:43,796 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\Приемная\PRIEM.xml 		 PRIEM
+2024-09-08 23:46:43,796 - TAUDITV2 - INFO - Произошло объединение оргданных с техданными
+2024-09-08 23:46:43,796 - TAUDITV2 - INFO - Найдены ARM с одинаковыми сетевыми именами
+2024-09-08 23:46:43,796 - TAUDITV2 - INFO - Процесс отчистки данных отчетов от мусора
+2024-09-08 23:46:43,875 - TAUDITV2 - INFO - ---------- STOP ----------

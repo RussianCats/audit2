@@ -5,7 +5,6 @@ import json
 
 
 def logic():
-
     # список фсех файлов в указанной папке
     _path_FullFiles = work_files.readDir(Path(config.CONFIG.EXECUTPATH) / "database")
 
