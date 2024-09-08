@@ -1,4 +1,5 @@
 venv/
+log/
 app.log
 database/*
 !database/_TABLE.xlsx
