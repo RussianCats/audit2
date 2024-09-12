@@ -28,7 +28,7 @@ def setup_logging():
 
         print(CONFIG.EXECUTPATH)
         # Создание обработчика, который будет записывать логи в файл
-        file_handler = logging.FileHandler(Path(CONFIG.EXECUTPATH) / generate_log_filename()) 
+        file_handler = logging.FileHandler(generate_log_filename()) 
         file_handler.setLevel(logging.INFO)
 
         # Создание обработчика вывода в консоль
