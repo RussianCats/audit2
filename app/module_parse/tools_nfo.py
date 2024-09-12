@@ -37,6 +37,17 @@ def __getInfoReport(_path, _report):
         _report["motherboard"]["vendor"] = _report["motherboard"]["vendor"].replace("System manufacturer", "").replace("To be filled by O.E.M.", "").replace("To Be Filled By O.E.M.", "")
         _report["motherboard"]["model"] = _report["motherboard"]["model"].replace("System Product Name", "").replace("To be filled by O.E.M.", "").replace("To Be Filled By O.E.M.", "")
 
+        if(_report["motherboard"]["vendor"] == ""):
+            try:
+                _report["motherboard"]["vendor"] = root.find('.//Data[Элемент="Изготовитель основной платы"]/Значение').text
+            except:
+                pass
+        if(_report["motherboard"]["model"] == ""):
+            try:
+                _report["motherboard"]["model"] = root.find('.//Data[Элемент="Модель основной платы"]/Значение').text
+            except:
+                pass
+
         try:
             _report["ram"] = root.find('.//Data[Элемент="Установленная оперативная память (RAM)"]/Значение').text
              # Определяем, какие единицы измерения содержит значение
@@ -71,15 +82,8 @@ def __getInfoReport(_path, _report):
 
 
         _report["hostname"] = root.find('.//Data[Элемент="Имя системы"]/Значение').text
-        # try:
-        #     #_report["motherboard"]["vendor"] = root.find('.//Data[Элемент="Изготовитель основной платы"]/Значение').text
+        
 
-        # except:
-        #     pass
-        # try:
-        #     # _report["motherboard"]["model"] = root.find('.//Data[Элемент="Модель основной платы"]/Значение').text
-        # except:
-        #     pass
         
         
         arr_tmp_interface = []
@@ -103,7 +107,6 @@ def __getInfoReport(_path, _report):
                 _report["ip"].append(inter[1])
                 _report["mac"].append(inter[2])
 
-        print(arr_tmp_interface)
 
 
 
@@ -146,6 +149,30 @@ def __getInfoReport(_path, _report):
                     memorySize += float(tmp.replace(",", ".")) * 1024
                 else:
                     pass
+        
+        data = root.findall('.//Category[@name="Диски"]')
+        data = data[1]
+        data = data.findall('.//Data/Значение')  
+        if(memorySize == 0):
+            for val in data:
+                counter += 1
+                if(val.text == "Local Fixed Disk" or val.text == "Локальный несъемный диск" or val.text == "Локальный жесткий диск" or val.text == "Несъемный жесткий диск"):
+                    counter = 0 
+                if(counter == 7):
+                    tmp = re.sub("\\(.*\\)","", val.text)
+                    tmp = tmp.strip()
+                    if(tmp[-3:] == " ГБ"):
+                        tmp = tmp[:-3]
+                        memorySize += float(tmp.replace(",", "."))
+                    elif(tmp[-3:] == " МБ"):
+                        tmp = tmp[:-3]
+                        memorySize += float(tmp.replace(",", ".")) / 1024
+                    elif(tmp[-3:] == " ТБ"):
+                        tmp = tmp[:-3]
+                        memorySize += float(tmp.replace(",", ".")) * 1024
+                    else:
+                        pass  
+
         _report["disk"] = str(int(memorySize)) + " ГБ"
         logger.info(f"Собран: {_path} \t\t {_report["hostname"]}")
 
