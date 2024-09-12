@@ -1,0 +1,78 @@
+2024-09-12 10:05:51,486 - TAUDITV2 - INFO - ---------- START ----------
+2024-09-12 10:05:51,654 - TAUDITV2 - INFO - Чистим от дубликатов, найдено 0 дубликатов
+2024-09-12 10:05:51,670 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\101\RCBU75X_[03000200].xml 		 RCBU75X
+2024-09-12 10:05:51,686 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU18X_[03C00218].xml 		 RCBU18X
+2024-09-12 10:05:51,696 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU24X_[03C00218].xml 		 RCBU24X
+2024-09-12 10:05:51,710 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU3X_[03C00218].xml 		 RCBU3X
+2024-09-12 10:05:51,725 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU48X_[BEFF1E80].xml 		 RCBU48X
+2024-09-12 10:05:51,742 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU51X_[7C7D3924].xml 		 RCBU51X
+2024-09-12 10:05:51,759 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU54X_[FCA4B508].xml 		 RCBU54X
+2024-09-12 10:05:51,777 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU58X_[C82AF32A].xml 		 RCBU58X
+2024-09-12 10:05:51,789 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU61X_[8EEE8BA6].xml 		 RCBU61X
+2024-09-12 10:05:51,789 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU79X_[03000200].xml 		 RCBU79X
+2024-09-12 10:05:51,804 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\103\RCBU82X_[03000200].xml 		 RCBU82X
+2024-09-12 10:05:51,820 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU100X_[03000200].xml 		 RCBU100X
+2024-09-12 10:05:51,837 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU19X_[03C00218].xml 		 RCBU19X
+2024-09-12 10:05:51,852 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU28X_[03C00218].xml 		 RCBU28X
+2024-09-12 10:05:51,860 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU35X_[03C00218].xml 		 RCBU35X
+2024-09-12 10:05:51,876 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU36X_[03C00218].xml 		 RCBU36X
+2024-09-12 10:05:51,892 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU60X_[3A4FF0DA].xml 		 RCBU60X
+2024-09-12 10:05:51,907 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\104\RCBU62X_[C4E0368C].xml 		 RCBU62X
+2024-09-12 10:05:51,940 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\105\RCBU27X_[03C00218].xml 		 RCBU27X
+2024-09-12 10:05:51,955 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\105\RCBU29X_[2249AE76].xml 		 RCBU29X
+2024-09-12 10:05:51,955 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\105\RCBU53X_[1DFC899A].xml 		 RCBU53X
+2024-09-12 10:05:51,971 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\105\RCBU59X_[1B089266].xml 		 RCBU59X
+2024-09-12 10:05:51,986 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\105\RCBU99X_[03000200].xml 		 RCBU99X
+2024-09-12 10:05:52,002 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\106\RCBU14X_[03C00218].xml 		 RCBU14X
+2024-09-12 10:05:52,002 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\106\RCBU22X_[03C00218].xml 		 RCBU22X
+2024-09-12 10:05:52,027 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\106\RCBU26X_[03C00218].xml 		 RCBU26X
+2024-09-12 10:05:52,042 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\106\RCBU4X_[03C00218].xml 		 RCBU4X
+2024-09-12 10:05:52,059 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\106\RCBU5X_[03C00218].xml 		 RCBU5X
+2024-09-12 10:05:52,059 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\106\RCBU9X_[03C00218].xml 		 RCBU9X
+2024-09-12 10:05:52,075 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\108\RCBU47X_[03C00218].xml 		 RCBU47X
+2024-09-12 10:05:52,091 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU21X_[03C00218].xml 		 RCBU21X
+2024-09-12 10:05:52,108 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU34X_[03C00218].xml 		 RCBU34X
+2024-09-12 10:05:52,137 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU43X_[03C00218].xml 		 RCBU43X
+2024-09-12 10:05:52,158 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU44X_[03C00218].xml 		 RCBU44X
+2024-09-12 10:05:52,185 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU49X_[804E0D80].xml 		 RCBU49X
+2024-09-12 10:05:52,207 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU57X_[5F466A82].xml 		 RCBU57X
+2024-09-12 10:05:52,233 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU65X_[03C00218].xml 		 RCBU65X
+2024-09-12 10:05:52,272 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU76X_[03000200].xml 		 RCBU76X
+2024-09-12 10:05:52,306 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU77X_[03000200].xml 		 RCBU77X
+2024-09-12 10:05:52,322 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\109\RCBU7X_[03C00218].xml 		 RCBU7X
+2024-09-12 10:05:52,341 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\112\RCBU91X_[03000200].xml 		 RCBU91X
+2024-09-12 10:05:52,356 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\112\RCBUADMX_[03C00218].xml 		 RCBUADMX
+2024-09-12 10:05:52,372 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\112\RCBUITX_[9AE2310A].xml 		 RCBUITX
+2024-09-12 10:05:52,388 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU101X_[03000200].xml 		 RCBU101X
+2024-09-12 10:05:52,421 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU32PC_[5DCC7C26].xml 		 RCBU32PC
+2024-09-12 10:05:52,447 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU42X_[C401DE02].xml 		 RCBU42X
+2024-09-12 10:05:52,463 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU78X_[03000200].xml 		 RCBU78X
+2024-09-12 10:05:52,479 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU80X_[03000200].xml 		 RCBU80X
+2024-09-12 10:05:52,487 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU83X_[03000200].xml 		 RCBU83X
+2024-09-12 10:05:52,503 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\114\RCBU90X_[03000200].xml 		 RCBU90X
+2024-09-12 10:05:52,520 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\116\RCBU17X_[03C00218].xml 		 RCBU17X
+2024-09-12 10:05:52,536 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\116\RCBU1_[03D502E0].xml 		 RCBU1
+2024-09-12 10:05:52,569 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\116\RCBU25_[03C00218].xml 		 RCBU25
+2024-09-12 10:05:52,599 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\116\RCBU37X_[03C00218].xml 		 RCBU37X
+2024-09-12 10:05:52,615 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\116\RCBU40X_[53AB6C00].xml 		 RCBU40X
+2024-09-12 10:05:52,619 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU103X_[03000200].xml 		 RCBU103X
+2024-09-12 10:05:52,647 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU15X_[03C00218].xml 		 RCBU15X
+2024-09-12 10:05:52,679 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU20X_[03C00218].xml 		 RCBU20X
+2024-09-12 10:05:52,696 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU32X_[03C00218].xml 		 RCBU32X
+2024-09-12 10:05:52,711 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU39X_[03C00218].xml 		 RCBU39X
+2024-09-12 10:05:52,727 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU46X_[03C00218].xml 		 RCBU46X
+2024-09-12 10:05:52,734 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU63X_[8B132380].xml 		 RCBU63X
+2024-09-12 10:05:52,767 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU64X_[6A9D8F2A].xml 		 RCBU64X
+2024-09-12 10:05:52,785 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU6X_[03C00218].xml 		 RCBU6X
+2024-09-12 10:05:52,826 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU84X_[03000200].xml 		 RCBU84X
+2024-09-12 10:05:52,857 - TAUDITV2 - INFO - Собран:   C:\Users\pima\Documents\test\user12345\database\118\RCBU86X_[03000200].xml 		 RCBU86X
+2024-09-12 10:05:52,857 - TAUDITV2 - ERROR - Не найдены ТЕХ данные для АРМ - host: RCBU33X
+2024-09-12 10:05:52,857 - TAUDITV2 - ERROR - Не найдены ТЕХ данные для АРМ - host: RCBU105
+2024-09-12 10:05:52,865 - TAUDITV2 - INFO - Произошло объединение оргданных с техданными
+2024-09-12 10:05:52,865 - TAUDITV2 - INFO - Найдены ARM с одинаковыми сетевыми именами
+2024-09-12 10:05:52,865 - TAUDITV2 - INFO - Процесс отчистки данных отчетов от мусора
+2024-09-12 10:05:52,873 - TAUDITV2 - WARNING - Не удалось найти IP адрес RCBU33X
+2024-09-12 10:05:52,873 - TAUDITV2 - WARNING - Не удалось найти MAC адрес RCBU33X
+2024-09-12 10:05:52,873 - TAUDITV2 - WARNING - Не удалось найти IP адрес RCBU105
+2024-09-12 10:05:52,873 - TAUDITV2 - WARNING - Не удалось найти MAC адрес RCBU105
+2024-09-12 10:05:53,192 - TAUDITV2 - INFO - ---------- STOP ----------

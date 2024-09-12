@@ -19,6 +19,9 @@ def main():
 
     if args.pathd:
         config.CONFIG.EXECUTPATH = args.pathd
+    else:
+        print("Нет пути --pathd")
+        exit()
 
     config.CONFIG.LIBPATH = pkg_resources.resource_filename(__name__, '')
     print(config.CONFIG.LIBPATH)

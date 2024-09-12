@@ -183,8 +183,20 @@ def writeExelTable(_listReports):
         # список ОС
         _arr_os.append(report["os"]["small"])
         
-
+        tmp_ip = ""
+        tmp_mac = ""
         # таблица добавить из файла
+        try:
+            tmp_ip = f"{report["ip"][0] if (report["duplicate"] == True) or config.CONFIG.ADD_IP_TABLE else ""}"
+        except:
+            logger.warn(f"Не удалось найти IP адрес {report["hostname"]}")
+            tmp_ip = ""
+        try:
+            tmp_mac =  f"{report["mac"][0] if (report["duplicate"] == True) or config.CONFIG.ADD_MAC_TABLE else ""}"
+        except:
+            logger.warn(f"Не удалось найти MAC адрес {report["hostname"]}")
+            tmp_mac = ""
+
         _table_Add.append([
             "АРМ",
             f"{report["hostname"]}",
@@ -192,8 +204,8 @@ def writeExelTable(_listReports):
             "",
             "АРМ",
             f"{report["org"]["inventory"]}",
-            f"{report["ip"][0] if report["duplicate"] == True else ""}",
-            f"{report["mac"][0] if report["duplicate"] == True else ""}"
+            tmp_ip,
+            tmp_mac
  
         ])
 
@@ -202,8 +214,8 @@ def writeExelTable(_listReports):
             "АРМ",
             f"Сетевое имя: \"{report["hostname"]}\"; \n\
 Заводской/ инвентарный номер: \"{"б/н" if report["org"]["inventory"] == "" else report["org"]["inventory"]}\"; \n\
-IP-адрес: \"{report["ip"][0] if report["duplicate"] == True else ""}\"; \n\
-MAC-адрес: \"{report["mac"][0] if report["duplicate"] == True else ""}\"; \n\
+IP-адрес: \"{tmp_ip}\"; \n\
+MAC-адрес: \"{tmp_mac}\"; \n\
 Модель: \"\"",
             "",
             f'{report["os"]["small"]}',

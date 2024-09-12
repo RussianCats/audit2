@@ -1,8 +1,10 @@
-#app/services/logging.py
-from app.services import *
+import logging
+import os
 from app.config import CONFIG
 import time
 import random
+from pathlib import Path
+
 
 def generate_log_filename():
     # Получаем текущее время в формате ГГГГММДД_ЧЧММСС
@@ -17,29 +19,29 @@ def generate_log_filename():
     CONFIG.NAMEFILELOG = filename
     return filename
 
+# Функция для настройки логгера
+def setup_logging():
+    logger = logging.getLogger('TAUDITV2')
 
+    if not logger.hasHandlers(): 
+        logger.setLevel(logging.INFO) 
 
+        print(CONFIG.EXECUTPATH)
+        # Создание обработчика, который будет записывать логи в файл
+        file_handler = logging.FileHandler(Path(CONFIG.EXECUTPATH) / generate_log_filename()) 
+        file_handler.setLevel(logging.INFO)
 
-# Создание логгера
-logger = logging.getLogger('TAUDITV2')
-logger.setLevel(logging.INFO)  # Установка уровня логирования
+        # Создание обработчика вывода в консоль
+        console_handler = logging.StreamHandler()
+        console_handler.setLevel(logging.ERROR) 
 
-# Создание обработчика, который будет записывать логи в файл
-file_handler = logging.FileHandler(f'log/{generate_log_filename()}')
-file_handler.setLevel(logging.INFO)
+        # Создание и установка форматтера
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        file_handler.setFormatter(formatter)
+        console_handler.setFormatter(formatter)
 
-# Создание обработчика вывода в консоль
-console_handler = logging.StreamHandler()
-console_handler.setLevel(logging.ERROR)  # Например, выводить в консоль только ошибки
+        # Добавление обработчиков к логгеру
+        logger.addHandler(file_handler)
+        logger.addHandler(console_handler)
 
-# Создание и установка форматтера
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-file_handler.setFormatter(formatter)
-console_handler.setFormatter(formatter)
-
-# Добавление обработчиков к логгеру
-logger.addHandler(file_handler)
-logger.addHandler(console_handler)
-
-
-
+    return logger  # Возвращаем настроенный логгер

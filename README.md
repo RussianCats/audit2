@@ -4,7 +4,8 @@
     - `source venv/bin/activate` OR `.\venv\Scripts\activate` - активировать виртуальное окружение
     - `pip install -r requirements.txt` - установка зависимостей
     - `pip install -e .` - установить библиотеку
-    - `taudit2` - запуск приложения
+    - `taudit2 --pathd "C:\Users\pima\Documents\test\user12345"` - запуск приложения
+    
 
 2. команды для установки в систему
     - `pip install -r requirements.txt` - установка зависимостей

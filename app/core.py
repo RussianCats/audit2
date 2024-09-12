@@ -221,7 +221,7 @@ def clenDataReport(_list_report):
 
             report["monitor"] = [k.strip().split(" ")[0] for k in report["monitor"] if k.split(" ")]
             report["mouse"] = report["mouse"].strip().split(" ")[0]
-            report["keyboard"] = report["mouse"].strip().split(" ")[0]
+            report["keyboard"] = report["keyboard"].strip().split(" ")[0]
            
     logger.info(f"Процесс отчистки данных отчетов от мусора")
     return _list_report
