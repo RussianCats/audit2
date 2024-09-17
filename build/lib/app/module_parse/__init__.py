@@ -1,6 +1,7 @@
 from app.forms import *
 from app.config import CONFIG
-from app.services.logging import logger
+from app.services.logging import setup_logging
+logger = setup_logging()
 from app.module_files.work_files import *
 from app.module_files.exel import *
 

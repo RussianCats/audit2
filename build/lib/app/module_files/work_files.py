@@ -1,9 +1,10 @@
+#app/module_files/work_files.py
 from app import *
 import re
 import chardet
 from pathlib import Path
-from app.services.logging import logger
-import json
+from app.services.logging import setup_logging
+logger = setup_logging()
 
 
 

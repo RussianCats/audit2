@@ -5,6 +5,7 @@
     - `pip install -r requirements.txt` - установка зависимостей
     - `pip install -e .` - установить библиотеку
     - `taudit2 --pathd "C:\Users\pima\Documents\test\user12345"` - запуск приложения
+    - `D:\main\develop\audit2\venv\Scripts\taudit2.exe --pathd "C:\Users\pima\Documents\test\user12345"` - запуск приложения без активации виртуального окружения
     
 
 2. команды для установки в систему

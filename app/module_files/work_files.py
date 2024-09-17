@@ -70,8 +70,12 @@ def readReportTXTFile(_file_path, _report, _boolAddres=False):
                     _report["org"]["FIO"] = re.split(r'\s*[;,/]\s*', value)  
                 elif key == "uuid":
                     _report["uuid"] = value 
+                      
             else:
                 logger.error(f"Некорректная строка: {clean_line}. Файл: {_file_path}")
+
+        # if (_report["uuid"] == ""):
+        #     print(f"!!!!!!!!!!{_report["hostname"]}")  
 
     return _report
 

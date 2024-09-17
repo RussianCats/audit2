@@ -98,27 +98,17 @@ def delDuplicateReport(_listReports):
 def merge_reports(_list_report, _list_reportTech):
     # Обходим элементы массива _list_reportTech
     for reportXML in _list_reportTech:
-        # Получаем обрезанный uuid и hostname текущего элемента из _list_reportTech
-        uuid = reportXML["uuid"].split('-')[0]
-        hostname = reportXML["hostname"].upper()
-
         # Переменная для отслеживания существования элемента в _list_report
         foundTech = False
 
-        # Обходим элементы массива _list_report
-        for report in _list_report:
-            # Проверяем, является ли uuid в report пустым
-            if report["uuid"] == None:
-                # Если uuid пустой, сравниваем только по hostname
-                if report["hostname"].upper() == hostname:
-                    foundTech = True
-            else:
-                # Если uuid не пустой, сравниваем по обоим параметрам
-                if report["uuid"].split('-')[0] == uuid and report["hostname"].upper() == hostname:
-                    foundTech = True
 
-            # Если нашли совпадение, обновляем информацию в report
-            if foundTech:
+        # Приводим hostname к верхнему регистру один раз для оптимизации
+        target_hostname = reportXML["hostname"].upper()
+        target_uuid = reportXML["uuid"]
+
+        # Первый проход: поиск по обоим параметрам (uuid и hostname)
+        for report in _list_report:
+            if (report.get("uuid") == target_uuid) and (report.get("hostname", "").upper() == target_hostname):
                 report["uuid"] = reportXML["uuid"]
                 report["ip"] = reportXML["ip"]
                 report["mac"] = reportXML["mac"]
@@ -131,7 +121,27 @@ def merge_reports(_list_report, _list_reportTech):
                 report["disk"] = reportXML["disk"]
                 report["ipt_list"] = reportXML["ipt_list"]
                 report["app_list"] = reportXML["app_list"]
-                break  # Прекращаем поиск, так как нужный элемент найден
+                foundTech = True
+                break  # Выход из цикла после нахождения совпадения
+
+        # Если не найдено по обоим параметрам, выполняем второй проход
+        if not foundTech:
+            for report in _list_report:
+                if report.get("hostname", "").upper() == target_hostname:
+                    report["uuid"] = reportXML["uuid"]
+                    report["ip"] = reportXML["ip"]
+                    report["mac"] = reportXML["mac"]
+                    report["cpu"] = reportXML["cpu"]
+                    report["videoadapter"] = reportXML["videoadapter"]
+                    report["cd_dvd"] = reportXML["cd_dvd"]
+                    report["motherboard"] = reportXML["motherboard"]
+                    report["os"] = reportXML["os"]
+                    report["ram"] = reportXML["ram"]
+                    report["disk"] = reportXML["disk"]
+                    report["ipt_list"] = reportXML["ipt_list"]
+                    report["app_list"] = reportXML["app_list"]
+                    foundTech = True
+                    break  # Выход из цикла после нахождения совпадения
 
         # Если элемент не найден, добавляем его в _list_report
         if not foundTech:

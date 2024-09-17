@@ -6,9 +6,9 @@ class CONFIG:
     DISKINFO = False
     CHANGE_INVENTORY = True
     # обязательно записывать данные об ip в таблицу обновить средства из файла
-    ADD_IP_TABLE = True
+    ADD_IP_TABLE = False
     # обязательно записывать данные об mac в таблицу обновить средства из файла
-    ADD_MAC_TABLE = True
+    ADD_MAC_TABLE = False
     CHANGE_ONLY_VENDOR_FOR_PERIPHERY = True
     DELL_ARM_NOT_FIND_ORG = False
     LIBPATH = ""

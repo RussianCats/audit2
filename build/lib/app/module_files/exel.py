@@ -1,5 +1,6 @@
 from app import *
-from app.services.logging import logger
+from app.services.logging import setup_logging
+logger = setup_logging()
 from app.forms import *
 import os
 
