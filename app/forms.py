@@ -1,6 +1,8 @@
 infoReport = {
     "hostname": "",
     "uuid": "",
+    "type_arm": "",
+    "description": "",
     "ip": [],
     "mac": [],
     "cpu": "",
@@ -25,6 +27,7 @@ infoReport = {
         "inventory": "",
         "cabinet": "",
         "structural": [],
+        "position": [],
         "FIO": [],
         "address": ""
     },

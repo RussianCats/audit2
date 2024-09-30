@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 import re
 import os
 import json
+from copy import deepcopy
 
 
 

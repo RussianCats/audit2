@@ -21,7 +21,7 @@ def logic():
     # считываем орг и тех данные из json файлов, потому что они содержать в себе все
     _list_reportJSON = []
     for json_file in [file for file in _path_FullFiles if file.suffix == '.json']:
-        _list_reportJSON.append(module_parse.tools_json_linux.parseJSONLinux(json_file))
+        _list_reportJSON.append(module_parse.tools_json.parseJSONLinux(json_file))
     _list_reportJSON = [i for i in _list_reportJSON if i is not None]
     _list_report += _list_reportJSON
         
