@@ -51,8 +51,8 @@ def __getInfoReport(_path, _report):
                 _report["motherboard"]["model"] = result["motherboard"]["model"]
                 _report["os"]["small"] = result["os"]["small"]
                 _report["os"]["full"] = result["os"]["full"]
-                _report["ram"] = result["ram"]
-                _report["disk"] = result["disk"]
+                _report["ram"] = result["ram"].replace(" GB", " ГБ")
+                _report["disk"] = result["disk"].replace(" GB", " ГБ")
 
                 try:
                     for ipt in result["ipt_list"]: # в массиве
@@ -88,7 +88,7 @@ def __getInfoReport(_path, _report):
             for tmp_disk in result["tech"]["disk"] : # в массиве
                 if not(tmp_disk[0] in "USB Device"):
                     tmp_collect += float(tmp_disk[1].replace(" ГБ", "").replace(",", "."))
-            _report["disk"] = tmp_collect
+            _report["disk"] = f"{int(tmp_collect)} ГБ" 
 
             try:
                 for ipt in result["app"]: # в массиве
@@ -110,6 +110,8 @@ def __getInfoReport(_path, _report):
                 _report["org"]["position"].append(tmp_emp[1])  # в массиве
                 _report["org"]["structural"].append(tmp_emp[2])  # в массиве
 
+        _report["cpu"] = _report["cpu"].split('CPU @')[0]
+        _report["cpu"] = _report["cpu"].split('@')[0]
         # print(_report)
 
         # Closing file
