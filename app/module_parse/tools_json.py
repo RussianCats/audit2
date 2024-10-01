@@ -37,7 +37,8 @@ def __getInfoReport(_path, _report, _arrIPTs):
         
         # returns JSON object as 
         # a dictionary
-        result = json.load(f)
+        with open(_path, 'r', encoding='utf-8', newline=None) as f:
+            result = json.load(f)
 
         replace_nulls(result)
 
