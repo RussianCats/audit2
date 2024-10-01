@@ -1,4 +1,5 @@
 Kaspersky Endpoint Security для Windows [Русский (Россия)]
+Kaspersky Endpoint Security для Windows
 Positive Technologies XSpider
 КриптоПро CSP
 ViPNet Client
@@ -9,7 +10,9 @@ Kaspersky Anti-Virus
 Kaspersky Free
 RedCheck
 Агент администрирования Kaspersky Security Center [Русский (Россия)]
+Агент администрирования Kaspersky Security Center
 Единый Клиент JaCarta
+Драйверы Рутокен
 Континент TLS-клиент
 Secret Net Studio - Базовая защита
 Secret Net Studio - Безопасная среда

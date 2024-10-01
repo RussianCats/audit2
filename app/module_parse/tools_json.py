@@ -1,9 +1,14 @@
 from app.module_parse import *
+from app.module_files.work_files import readFileToList
 from copy import deepcopy
 import json
 
+
 def parseJSONLinux(_pathJSONLinux):
-    report = __getInfoReport(_pathJSONLinux, deepcopy(infoReport))
+    report = __getInfoReport(_pathJSONLinux, 
+                            deepcopy(infoReport),
+                            readFileToList(f"{config.CONFIG.LIBPATH}/module_files/SZI.txt")
+                            )
     return report
     
 
@@ -25,7 +30,7 @@ def replace_nulls(data):
 
 
 
-def __getInfoReport(_path, _report):
+def __getInfoReport(_path, _report, _arrIPTs):
     try:
         # Opening JSON file
         f = open(_path)
@@ -91,10 +96,17 @@ def __getInfoReport(_path, _report):
             _report["disk"] = f"{int(tmp_collect)} ГБ" 
 
             try:
-                for ipt in result["app"]: # в массиве
-                    _report["app_list"].append([ipt[0], ipt[1], ipt[2]])
+                for app in result["app_list"]: # в массиве
+                    for IPT_in_arr in _arrIPTs:
+                        app[0] = app[0].replace("\xa0", " ")
+                        if("Kaspersky"in app[0]):
+                            print(app)
+                        if(IPT_in_arr[0] in app[0] and IPT_in_arr[1]): 
+                            IPT_in_arr[1] = False
+                            _report["ipt_list"].append([app[0], app[1], app[2]])
+                    
             except:
-                _report["app_list"] = []
+                _report["ipt_list"] = []
 
             _report["monitor"] = result["per"]["monitor"]  # в массиве
             _report["keyboard"] = result["per"]["keyboard"] 
